@@ -1,0 +1,7 @@
+#logo{
+    position: fixed;
+    left: 650px;
+    top: 100px;
+    max-width: 15%;
+    border-radius: 5px;
+}
