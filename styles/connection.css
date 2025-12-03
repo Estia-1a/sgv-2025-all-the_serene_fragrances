@@ -5,3 +5,20 @@
     max-width: 15%;
     border-radius: 5px;
 }
+
+#seconnecter{
+    position: fixed;
+    left:700px;
+    top: 300px;
+}
+
+#connexion{
+    font-size: 30px;
+    font-family: "Roboto", serif;
+    left:20px;
+}
+
+#info{
+    position: static;
+    margin-left:-10px;
+}
