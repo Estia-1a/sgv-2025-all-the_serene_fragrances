@@ -17,11 +17,27 @@
 }
 .button1{border: 2px solid #555555;}
 .block1 {
-    display: inline-block;
-    justify-content: space-between;
+  display: inline-block;
+  justify-content: space-between;
 }
 .block2 {
-    display: inline-block;
-    justify-content: space-between;
-    margin-left: 60%;
+  display: inline-block;
+  justify-content: space-between;
+  margin-left: 60%;
 }
+header {
+  display: flex;
+  background-image: url('../media/pictures/image_header_appartement.png');
+  background-position: center;
+  height: 100px;
+}
+
+body {
+    text-align: center;
+}
+
+.Barre-de-recherche {
+    display: inline-block;
+    margin-top: 50px;
+}
+
