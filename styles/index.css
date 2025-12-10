@@ -47,6 +47,11 @@ body {
     margin-top: 20px;
 }
 .taille_selecteur {
-    height: 16px;
+    height: 20px;
+    text-align: center;
+}
+fieldset.plus_petit {
+    width: 300px;
+    margin: auto;
 }
 
