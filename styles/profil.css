@@ -1,0 +1,39 @@
+#pp{
+    width: 10%;
+    margin-top:50px;
+    margin-left:400px
+}
+
+#infos{
+    margin-top:10px;
+    margin-left:410px
+}
+
+#critère{
+    margin-top: 300px;
+    margin-left:700px;
+    font-size: 30px;
+    font-family: "Roboto", serif;
+}
+
+#bandeau{
+    background-color: rgb(94, 132, 235);
+}
+
+#id{
+    margin-top: -400px;
+    margin-left:1050px;
+    font-size: 20px;
+    font-family: "Roboto", serif;
+}
+
+#p1{
+    background-color: rgb(94, 132, 235);
+}
+
+
+#p2{
+    margin-left:700px;
+    font-size: 30px;
+    font-family: "Roboto", serif;
+}
