@@ -4,127 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles/index.css" media="screen and (min-width: 768px)"> 
-    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="styles/index.css">
     <title>Estiappart</title>
 </head>
-<header>
-    <img src="./media/pictures/logo.png" alt="Logo Estiappart" class="image_menu">
-    <input type="button" class="button button1 block2 " value="Candidature" href="">
-    <input type="button" class="button button1"  value="Avis" href="">
-    <input type="button" class="button button1" value="Discuter" href="">
-    <input type="button" class="button button1" value="Profil" href="">
-</header>
+
 <body>
-    <img src="./media/pictures/image_header_appartement.png" alt="image d'un appartement" class="bandeau">
-    <input type="search" class="Barre-de-recherche" placeholder="Rechercher un appartement">
-    <input type="submit" class="ajout" value="recherche" href="">
+
+<header class="header">
+    <img src="./media/pictures/logo.png" alt="Logo Estiappart" class="image_menu">
+
+    <nav class="nav-menu">
+        <a href="#">Avis</a>
+        <a href="#">Discussion</a>
+        <a href="#">Candidature</a>
+        <a href="./profil.html">Profil</a>
+    </nav>
+</header>
+
+<img src="./media/pictures/image_header_appartement.png"
+     alt="Image d'un appartement"
+     class="bandeau">
+
+<div class="search-container">
+    <input type="search"
+           name="recherche"
+           class="Barre-de-recherche"
+           placeholder="Rechercher un appartement">
+</div>
+
+<section class="criteres">
+
     <p class="mettre_a_gauche">Critères de recherche :</p>
-    <div class="mettre_a_gauche">
-        <label>
-            <select class="entre_deux taille_selecteur" multiple size="2">
-            <option value="">Prix max</option>
-            <option value="100">100</option> 
-            <option value="200">200</option>
-            <option value="300">300</option>
-            <option value="400">400</option>
-            <option value="500">500</option>
-            <option value="600">600</option>
-            <option value="700">700</option>
-            <option value="800">800</option>
-            <option value="900">900</option>
-            <option value="1000">1000</option>
-            <option value="1000+">1000+</option>
+
+    <div class="ligne-criteres">
+
+        <select class="taille_selecteur">
+            <option>Prix max</option>
+            <option>100</option>
+            <option>200</option>
+            <option>300</option>
+            <option>500</option>
+            <option>1000+</option>
         </select>
-        </label>
-        <label>
-            <select class="entre_deux taille_selecteur"  multiple size="2">
-        <option value="">Durée mois</option>
-        <option value="1 mois">1 mois</option> 
-        <option value="2 mois">2 mois</option>
-        <option value="3 mois">3 mois</option>
-        <option value="4 mois">4 mois</option>
-        <option value="5 mois">5 mois</option>
-        <option value="6 mois">6 mois</option>
-        <option value="7 mois">7 mois</option>
-        <option value="8 mois">8 mois</option>
-        <option value="9 mois">9 mois</option>
-        <option value="10 mois">10 mois</option>
-        <option value="11 mois">11 mois</option>
-        <option value="1 ans">1 ans</option>
-        <option value="2 ans">2 ans</option>
-        <option value="3 ans">3 ans</option>
-        <option value="4 ans">4 ans</option>
-        <option value="5 ans +">5 ans + </option>
+
+        <select class="taille_selecteur">
+            <option>Durée (mois)</option>
+            <option>1</option>
+            <option>3</option>
+            <option>6</option>
+            <option>12</option>
         </select>
-        </label>
+
         <input type="text" placeholder="Ville" class="entre_deux">
-        <label>
-        <select class="entre_deux">
-        <option value="">Nombre de personnes</option>
-        <option value="1">1</option> 
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
+
+        <select>
+            <option>Nombre de personnes</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
         </select>
-        </label>
+
         <fieldset class="plus_petit">
-        <legend>Veuillez sélectionner vos intérêts</legend>
-        <div>
-            <input type="checkbox" name="seul" value="seul"/>
-            <label for="seul">seul</label>
-        </div>
-        <div>
-            <input type="checkbox" name="colocation" value="colocation" />
-            <label for="colocation">colocation</label>
-        </div>
-        <div>
-            <input type="checkbox" name="chambre" value="chambre" />
-            <label for="chambre">chambre chez l'habitant</label>
-        </div>
-        <div>
-            <input type="checkbox" name="camping" value="camping" />
-            <label for="camping">camping</label>
-        </div>
-        <div>
-            <input type="checkbox" name="maison" value="maison" />
-            <label for="maison">maison</label>
-        </div>
-        <div>
-            <input type="checkbox" name="appartement" value="appartement" />
-            <label for="appartement">appartement</label>
-        </div>
-        <div>
-            <input type="checkbox" name="meuble" value="meuble" />
-            <label for="meuble">meuble</label>
-        </div>
+            <legend>Type</legend>
+
+            <label><input type="checkbox"> Seul</label>
+            <label><input type="checkbox"> Colocation</label>
+            <label><input type="checkbox"> Chambre chez l'habitant</label>
+            <label><input type="checkbox"> Camping</label>
+            <label><input type="checkbox"> Maison</label>
+            <label><input type="checkbox"> Appartement</label>
+            <label><input type="checkbox"> Meublé</label>
         </fieldset>
+
     </div>
-    <div class="box">
-	<a class="button button1 center" href="#popup1">Enregistrer mes Critères</a>
+</section>
+
+<div class="box">
+    <a href="#popup1" class="button button1 center">
+        Enregistrer mes critères
+    </a>
 </div>
 
 <div id="popup1" class="overlay">
-	<div class="popup">
-		<img class="logo-popup" src="./media/pictures/logo.png">
-		<a class="close" href="#">&times;</a>
-		<div class="content">
-			<p class="mettre_a_gauche">connexion :</p>
-            <input type="text"  placeholder="Adresse mail" required>
-            <div class="saut-ligne"><input type="password" placeholder="Mot de passe" required></div>
-            <p class="mettre_a_gauche">Je suis :</p>
-                <input type="radio" id="locataire" name="fav_language" >
-                <label for="locataire">Locataire</label><br>
-                <input type="radio" id="propriétaire" name="fav_language" >
-                <label for="propriétaire">Propriétaire</label><br>
-            <button class="button button1 seconnecter-centrer" type="submit" href="">Se connecter</button>
-		</div>
-	</div>
+    <div class="popup popup-login">
+
+        <a class="close" href="#">&times;</a>
+
+        <img src="./media/pictures/logo.png"
+             alt="Logo Estiappart"
+             class="logo-popup">
+
+        <h2 class="popup-title">Connexion</h2>
+
+        <form class="popup-form">
+
+            <input type="email"
+                   name="email"
+                   placeholder="Adresse mail"
+                   required>
+
+            <input type="password"
+                   name="password"
+                   placeholder="Mot de passe"
+                   required>
+
+            <p class="popup-subtitle">Je suis :</p>
+
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="statut" required>
+                    Locataire
+                </label>
+
+                <label>
+                    <input type="radio" name="statut">
+                    Propriétaire
+                </label>
+            </div>
+
+            
+            <div class="box">
+                <a href="./profil.html" class="button button1 popup-button center">
+                    Se connecter
+                </a>
+            </div>
+
+        </form>
+
+    </div>
 </div>
+    
+
 </body>
 </html>

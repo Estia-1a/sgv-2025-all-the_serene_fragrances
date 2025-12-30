@@ -1,146 +1,234 @@
-.button {
-  background-color: white;
-  border: none;
-  color: black;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.button.center{
-  display: block;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-.button1:hover {
-  background-color: #000704;
-  color: white;
-}
-.button1{border: 2px solid #555555;}
-.block1 {
-  display: inline-block;
-  justify-content: space-between;
-}
-.block2 {
-  display: inline-block;
-  justify-content: space-between;
-  margin-left: 60%;
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
+    margin: 0;
+    background-color: #f6f6f6;
+    color: #222;
     text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 15px 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.image_menu {
+    width: 90px;
+}
+
+.nav-menu a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    color: #007a5a;
+}
+
+.bandeau {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.search-container {
+    margin-top: -30px;
 }
 
 .Barre-de-recherche {
-    display: inline-block;
-    margin-top: 50px;
+    width: 420px;
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-size: 16px;
 }
-.bandeau {
-    width: 100%;
-    height: 200px;
+
+.criteres {
+    width: 85%;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
+
 .mettre_a_gauche {
     text-align: left;
-    margin-left: 10%;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
-.mettre_a_gauche.entre_deux {
-    margin-top: 20px;
+
+.ligne-criteres {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
-.taille_selecteur {
-    height: 20px;
-    text-align: center;
+
+select,
+input[type="text"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    min-width: 160px;
 }
+
 fieldset.plus_petit {
-    width: 300px;
-    margin: auto;
+    border: none;
+    padding: 0;
+    margin-left: 20px;
 }
-.image_menu{
-    width: 100px;
-    height: 100px;
+
+fieldset.plus_petit label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
 .box {
-  width: 40%;
-  margin: 0 auto;
-  background: rgba(255,255,255,0.2);
-  padding: 35px;
-  border: 2px solid #fff;
-  border-radius: 20px/50px;
-  background-clip: padding-box;
-  text-align: center;
+    margin: 30px 0;
 }
+
+.button {
+    background-color: #007a5a;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #005f46;
+}
+
+.button.center {
+    display: inline-block;
+    margin: 0 auto;
+}
+
 .overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    visibility: hidden;
+    opacity: 0;
 }
+
 .overlay:target {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 
 .popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
+    background: white;
+    width: 32%;
+    margin: 90px auto;
+    padding: 30px;
+    border-radius: 12px;
+    position: relative;
 }
 
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
 .popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup .close:hover {
-  color: #06D85F;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    text-decoration: none;
+    color: #333;
 }
 
-@media screen and (max-width: 700px){
-  .box{
-    width: 70%;
-  }
-  .popup{
-    width: 70%;
-  }
-}
 .logo-popup {
-    width: 150px;
-    height: 150px;
+    width: 120px;
     margin-bottom: 20px;
 }
-.saut-ligne {
-    margin-top: 10px;
+@media screen and (max-width: 768px) {
+
+    .Barre-de-recherche {
+        width: 90%;
+    }
+
+    .ligne-criteres {
+        flex-direction: column;
+    }
+
+    .popup {
+        width: 90%;
+    }
 }
-.seconnecter-centrer {
+
+.popup-login {
+    width: 360px;
+    padding: 30px 25px;
+    border-radius: 12px;
     text-align: center;
 }
+
+.popup-title {
+    margin: 10px 0 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.popup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.popup-form input[type="email"],
+.popup-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.popup-subtitle {
+    text-align: left;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.radio-group {
+    text-align: left;
+}
+
+.radio-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.popup-button {
+    margin-top: 15px;
+    width: 100%;
+    background-color: #007a5a;
+    color: white;
+    border-radius: 8px;
+}
+
+.popup-button:hover {
+    background-color: #005f46;
+}
+
+.popup .close {
+    top: 12px;
+    right: 15px;
+    font-size: 26px;
+}
+
