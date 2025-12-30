@@ -9,16 +9,16 @@
     <title>Estiappart</title>
 </head>
 <header>
-    <img src="./media/logo.png" alt="Logo Estiappart" id="block1">
-    <input type="button" class="button button1 block2" placeholder="Candidature" value="Candidature" href="">
-    <input type="button" class="button button1" placeholder="avis" value="Avis" href="">
-    <input type="button" class="button button1" placeholder="discuter" value="Discuter" href="">
-    <input type="button" class="button button1" placeholder="profil" value="Profil" href="">
+    <img src="./media/pictures/logo.png" alt="Logo Estiappart" class="image_menu">
+    <input type="button" class="button button1 block2 " value="Candidature" href="">
+    <input type="button" class="button button1"  value="Avis" href="">
+    <input type="button" class="button button1" value="Discuter" href="">
+    <input type="button" class="button button1" value="Profil" href="">
 </header>
 <body>
     <img src="./media/pictures/image_header_appartement.png" alt="image d'un appartement" class="bandeau">
     <input type="search" class="Barre-de-recherche" placeholder="Rechercher un appartement">
-    <input type="submit" class="ajout" placeholder="Rechercher" value="recherche" href="">
+    <input type="submit" class="ajout" value="recherche" href="">
     <p class="mettre_a_gauche">Critères de recherche :</p>
     <div class="mettre_a_gauche">
         <label>
@@ -58,8 +58,8 @@
         <option value="5 ans +">5 ans + </option>
         </select>
         </label>
+        <input type="text" placeholder="Ville" class="entre_deux">
         <label>
-             <input type="text" placeholder="Ville" class="entre_deux">
         <select class="entre_deux">
         <option value="">Nombre de personnes</option>
         <option value="1">1</option> 
@@ -87,7 +87,44 @@
             <input type="checkbox" name="chambre" value="chambre" />
             <label for="chambre">chambre chez l'habitant</label>
         </div>
+        <div>
+            <input type="checkbox" name="camping" value="camping" />
+            <label for="camping">camping</label>
+        </div>
+        <div>
+            <input type="checkbox" name="maison" value="maison" />
+            <label for="maison">maison</label>
+        </div>
+        <div>
+            <input type="checkbox" name="appartement" value="appartement" />
+            <label for="appartement">appartement</label>
+        </div>
+        <div>
+            <input type="checkbox" name="meuble" value="meuble" />
+            <label for="meuble">meuble</label>
+        </div>
         </fieldset>
     </div>
+    <div class="box">
+	<a class="button button1 center" href="#popup1">Enregistrer mes Critères</a>
+</div>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<img class="logo-popup" src="./media/pictures/logo.png">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<p class="mettre_a_gauche">connexion :</p>
+            <input type="text"  placeholder="Adresse mail" required>
+            <div class="saut-ligne"><input type="password" placeholder="Mot de passe" required></div>
+            <p class="mettre_a_gauche">Je suis :</p>
+                <input type="radio" id="locataire" name="fav_language" >
+                <label for="locataire">Locataire</label><br>
+                <input type="radio" id="propriétaire" name="fav_language" >
+                <label for="propriétaire">Propriétaire</label><br>
+            <button class="button button1 seconnecter-centrer" type="submit" href="">Se connecter</button>
+		</div>
+	</div>
+</div>
 </body>
 </html>
