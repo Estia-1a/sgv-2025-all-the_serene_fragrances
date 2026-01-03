@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles/profil.css" media="screen and (min-width: 768px)"> 
-    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)"> 
+    <link rel="stylesheet" href="styles/profil.css"> 
     <title>Estiappart_Profil</title>
 </head>
+
+<body>
 
 <header class="header">
     <a href="index.html">
@@ -22,12 +23,12 @@
     </nav>
 </header>
 
-<body>
+
     <div id="p1">
     <p id="p2">Mon profil</p>
     </div>
 
-    <img id="pp" src="media\pictures\pp.webp" alt="photoprofil" >
+    <img id="pp" src="./media/pictures/pp.png" alt="photoprofil" >
     <div>
         <div id="infos">
             <p>Nom</p>
@@ -112,13 +113,13 @@
 
 <div class="box2">
     <a href="#popup2" class="button button1 center">
-        modifier mon profil
+        Modifier mon profil
     </a>
 </div>
 
     <div id="popup2" class="overlay">
         <div class="popup2">
-            <h2>mes modifications</h2>
+            <h2>Mes modifications</h2>
             <a class="close" href="#">&times;</a>
             <div class="content">
                 <p><input type="text" class="search" placeholder="nom"></p>
@@ -126,12 +127,9 @@
                 <p><input type="text" class="search" placeholder="age"></p>
                 <p><input type="text" class="search" placeholder="mail estia"></p>
                 <p><input type="text" class="search" placeholder="portable"></p>
-                <a href="profil.html">
-                    <p><button id=""  type="submit">Enregistrer mes informations</button></p>
-                </a>
-                <a href="profil.html">
-                    <p><button id=""  type="submit">Annuler</button></p>
-                </a>
+                <form action="profil.html">
+                <p><input type="submit" value="Enregistrer mes informations" class="button button1 center"></p>
+                </form>
             
             </div>
         </div>
