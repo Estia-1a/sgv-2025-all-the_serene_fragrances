@@ -33,16 +33,78 @@
     <p id = "critère" >Mes critères</p>
     </div>
 
-    <button id="buttoncritère" type="submit">Enregistrer mes critères</button>
+    <section class="criteres">
 
+    <p class="mettre_a_gauche">Critères de recherche :</p>
 
+    <div class="ligne-criteres">
 
-    <div class="box">
-        <a class="button" href="#popup1"><button id=bo>modifier mon profil</button></a>
+        <select class="taille_selecteur">
+            <option>Prix max</option>
+            <option>100</option>
+            <option>200</option>
+            <option>300</option>
+            <option>500</option>
+            <option>1000+</option>
+        </select>
+
+        <select class="taille_selecteur">
+            <option>Durée (mois)</option>
+            <option>1</option>
+            <option>3</option>
+            <option>6</option>
+            <option>12</option>
+        </select>
+
+        <input type="text" placeholder="Ville" class="entre_deux">
+
+        <select>
+            <option>Nombre de personnes</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+
+        <fieldset class="plus_petit">
+            <legend>Type</legend>
+
+            <label><input type="checkbox"> Seul</label>
+            <label><input type="checkbox"> Colocation</label>
+            <label><input type="checkbox"> Chambre chez l'habitant</label>
+            <label><input type="checkbox"> Camping</label>
+            <label><input type="checkbox"> Maison</label>
+            <label><input type="checkbox"> Appartement</label>
+            <label><input type="checkbox"> Meublé</label>
+        </fieldset>
+
     </div>
+</section>
 
-    <div id="popup1" class="overlay">
-        <div class="popup">
+<div class="box1">
+    <a href="#popup1" class="button button1 center">
+        Enregistrer mes critères
+    </a>
+</div>
+
+<div id="popup1" class="overlay">
+    <div class="popup popup-login">
+
+        <a class="close" href="#">&times;</a>
+        <h2 class="popup-title">Vos critères ont bien été enregistrés!</h2>
+
+    </div>
+</div>
+
+
+<div class="box2">
+    <a href="#popup2" class="button button1 center">
+        modifier mon profil
+    </a>
+</div>
+
+    <div id="popup2" class="overlay">
+        <div class="popup2">
             <h2>mes modifications</h2>
             <a class="close" href="#">&times;</a>
             <div class="content">
@@ -51,7 +113,9 @@
                 <p><input type="text" class="search" placeholder="age"></p>
                 <p><input type="text" class="search" placeholder="mail estia"></p>
                 <p><input type="text" class="search" placeholder="portable"></p>
-                <p><button id="" type="submit">Enregistrer mes informations</button></p>
+                <a href="profil.html">
+                    <p><button id=""  type="submit">Enregistrer mes informations</button></p>
+                </a>
                 <a href="profil.html">
                     <p><button id=""  type="submit">Annuler</button></p>
                 </a>
