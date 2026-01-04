@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles/profil.css"> 
+    <link rel="stylesheet" href="styles\profil.css"> 
     <title>Estiappart_Profil</title>
 </head>
-
 <body>
 
 <header class="header">
     <a href="index.html">
-    <img src="./media/pictures/logo.png" alt="Logo Estiappart" class="image_menu">
+        <img src="./media/pictures/logo.png" alt="Logo Estiappart" class="image_menu">
     </a>
-
     <nav class="nav-menu">
         <a href="#">Avis</a>
         <a href="#">Discussion</a>
@@ -23,120 +20,103 @@
     </nav>
 </header>
 
-
-    <div id="p1">
-    <p id="p2">Mon profil</p>
+<main>
+    <div class="bandeau-bleu">
+        <h1>Mon profil</h1>
     </div>
 
-    <img id="pp" src="./media/pictures/pp.png" alt="photoprofil" >
-    <div>
+    <section class="profil-section">
+        <img id="pp" src="./media/pictures/pp.png" alt="photoprofil">
         <div id="infos">
-            <p>Nom</p>
-            <p>Prénom</p>
-            <p>Age</p>
-            <p>nom.prenom@etu.estia.fr</p>
-            <p>06 12 34 56 67</p>
+            <p><strong>Nom :</strong> Nom</p>
+            <p><strong>Prénom :</strong> Prénom</p>
+            <p><strong>Age :</strong> Age</p>
+            <p><strong>Mail ESTIA :</strong>nom.prenom@etu.estia.fr</p>
+            <p><strong>Portable :</strong>06 12 34 56 67</p>
         </div>
-
-        <div id="id">
-            <p>Mes pieces justificatives</p>
+        <div id="pieces-justificatives">
+            <p>📁 Mes pièces justificatives</p>
         </div>
-    </div> 
+    </section>
 
-    <div id=bandeau>
-    <p id = "critère" >Mes critères</p>
+    <div class="bandeau-bleu">
+        <h2>Mes critères</h2>
     </div>
 
     <section class="criteres">
+        <p class="titre-recherche">Critères de recherche :</p>
+        <div class="ligne-criteres">
+            <select>
+                <option>Prix max</option>
+                <option>100</option>
+                <option>200</option>
+                <option>300</option>
+                <option>500</option>
+                <option>1000+</option>
+            </select>
 
-    <p class="mettre_a_gauche">Critères de recherche :</p>
+            <select>
+                <option>Durée (mois)</option>
+                <option>1</option>
+                <option>3</option>
+                <option>6</option>
+                <option>12</option>
+            </select>
 
-    <div class="ligne-criteres">
+            <input type="text" placeholder="Ville">
 
-        <select class="taille_selecteur">
-            <option>Prix max</option>
-            <option>100</option>
-            <option>200</option>
-            <option>300</option>
-            <option>500</option>
-            <option>1000+</option>
-        </select>
+            <select>
+                <option>Nombre de personnes</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
 
-        <select class="taille_selecteur">
-            <option>Durée (mois)</option>
-            <option>1</option>
-            <option>3</option>
-            <option>6</option>
-            <option>12</option>
-        </select>
+            <fieldset class="plus_petit">
+                <legend>Type</legend>
+                <div class="checkbox-grid">
+                    <label><input type="checkbox"> Seul</label>
+                    <label><input type="checkbox"> Colocation</label>
+                    <label><input type="checkbox"> Chambre chez l'habitant</label>
+                    <label><input type="checkbox"> Camping</label>
+                    <label><input type="checkbox"> Maison</label>
+                    <label><input type="checkbox"> Appartement</label>
+                    <label><input type="checkbox"> Meublé</label>
+                </div>
+            </fieldset>
+        </div>
 
-        <input type="text" placeholder="Ville" class="entre_deux">
-
-        <select>
-            <option>Nombre de personnes</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-        </select>
-
-        <fieldset class="plus_petit">
-            <legend>Type</legend>
-
-            <label><input type="checkbox"> Seul</label>
-            <label><input type="checkbox"> Colocation</label>
-            <label><input type="checkbox"> Chambre chez l'habitant</label>
-            <label><input type="checkbox"> Camping</label>
-            <label><input type="checkbox"> Maison</label>
-            <label><input type="checkbox"> Appartement</label>
-            <label><input type="checkbox"> Meublé</label>
-        </fieldset>
-
-    </div>
-</section>
-
-<div class="box1">
-    <a href="#popup1" class="button button1 center">
-        Enregistrer mes critères
-    </a>
-</div>
+        <div class="action-buttons">
+            <a href="#popup1" class="button">Enregistrer mes critères</a>
+            <a href="#popup2" class="button button-alt">Modifier mon profil</a>
+        </div>
+    </section>
+</main>
 
 <div id="popup1" class="overlay">
-    <div class="popup popup-login">
-
+    <div class="popup">
         <a class="close" href="#">&times;</a>
-        <h2 class="popup-title">Vos critères ont bien été enregistrés!</h2>
-
+        <h2 class="popup-title">Vos critères ont bien été enregistrés !</h2>
     </div>
 </div>
 
-
-<div class="box2">
-    <a href="#popup2" class="button button1 center">
-        Modifier mon profil
-    </a>
-</div>
-
-    <div id="popup2" class="overlay">
-        <div class="popup2">
-            <h2>Mes modifications</h2>
-            <a class="close" href="#">&times;</a>
-            <div class="content">
-                <p><input type="text" class="search" placeholder="nom"></p>
-                <p><input type="text" class="search" placeholder="prénom"></p>
-                <p><input type="text" class="search" placeholder="age"></p>
-                <p><input type="text" class="search" placeholder="mail estia"></p>
-                <p><input type="text" class="search" placeholder="portable"></p>
-                <form action="profil.html">
-                <p><input type="submit" value="Enregistrer mes informations" class="button button1 center"></p>
-                </form>
-            
-            </div>
+<div id="popup2" class="overlay">
+    <div class="popup">
+        <a class="close" href="#">&times;</a>
+        <h2>Mes modifications</h2>
+        <div class="popup-content">
+            <input type="text" placeholder="Nom">
+            <input type="text" placeholder="Prénom">
+            <input type="text" placeholder="Age">
+            <input type="text" placeholder="Mail ESTIA">
+            <input type="text" placeholder="Portable">
+            <form action="profil.html">
+                <input type="submit" value="Enregistrer" class="button">
+            </form>
         </div>
     </div>
+</div>
 
 </body>
-
-
-
 </html>
